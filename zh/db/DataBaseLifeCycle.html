@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据生命周期管理 | CMPAK 账管文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="CMPAK 账管交维文档">
+    
+    <link rel="preload" href="/acct-doc/assets/css/0.styles.51d143cd.css" as="style"><link rel="preload" href="/acct-doc/assets/js/app.63ad57cc.js" as="script"><link rel="preload" href="/acct-doc/assets/js/2.33beb707.js" as="script"><link rel="preload" href="/acct-doc/assets/js/12.aeeb4d1b.js" as="script"><link rel="prefetch" href="/acct-doc/assets/js/10.3a0026ee.js"><link rel="prefetch" href="/acct-doc/assets/js/11.37b0e332.js"><link rel="prefetch" href="/acct-doc/assets/js/13.ac323191.js"><link rel="prefetch" href="/acct-doc/assets/js/14.bd2cb70d.js"><link rel="prefetch" href="/acct-doc/assets/js/15.e224db95.js"><link rel="prefetch" href="/acct-doc/assets/js/16.1706826f.js"><link rel="prefetch" href="/acct-doc/assets/js/17.d60e9805.js"><link rel="prefetch" href="/acct-doc/assets/js/18.b7a13350.js"><link rel="prefetch" href="/acct-doc/assets/js/19.cf8e7b1d.js"><link rel="prefetch" href="/acct-doc/assets/js/20.105e9797.js"><link rel="prefetch" href="/acct-doc/assets/js/21.b3600cfd.js"><link rel="prefetch" href="/acct-doc/assets/js/22.fc9c31d9.js"><link rel="prefetch" href="/acct-doc/assets/js/23.63486421.js"><link rel="prefetch" href="/acct-doc/assets/js/24.206d6f32.js"><link rel="prefetch" href="/acct-doc/assets/js/25.fcfed3db.js"><link rel="prefetch" href="/acct-doc/assets/js/26.9c2a70ba.js"><link rel="prefetch" href="/acct-doc/assets/js/27.a56776c7.js"><link rel="prefetch" href="/acct-doc/assets/js/28.f3ad07db.js"><link rel="prefetch" href="/acct-doc/assets/js/29.b5b0f0f5.js"><link rel="prefetch" href="/acct-doc/assets/js/3.e252b8df.js"><link rel="prefetch" href="/acct-doc/assets/js/30.3b82be60.js"><link rel="prefetch" href="/acct-doc/assets/js/31.7cfde945.js"><link rel="prefetch" href="/acct-doc/assets/js/32.b0420cfa.js"><link rel="prefetch" href="/acct-doc/assets/js/33.9208bbca.js"><link rel="prefetch" href="/acct-doc/assets/js/34.1ef2f7cc.js"><link rel="prefetch" href="/acct-doc/assets/js/35.f00cf5a4.js"><link rel="prefetch" href="/acct-doc/assets/js/36.c8d22bd6.js"><link rel="prefetch" href="/acct-doc/assets/js/37.a8d4eb5f.js"><link rel="prefetch" href="/acct-doc/assets/js/4.6f4dd1f9.js"><link rel="prefetch" href="/acct-doc/assets/js/5.1dee15cb.js"><link rel="prefetch" href="/acct-doc/assets/js/6.6d4ac80a.js"><link rel="prefetch" href="/acct-doc/assets/js/7.e14e4b70.js"><link rel="prefetch" href="/acct-doc/assets/js/8.36259b9a.js"><link rel="prefetch" href="/acct-doc/assets/js/9.bbaf23c7.js">
+    <link rel="stylesheet" href="/acct-doc/assets/css/0.styles.51d143cd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/acct-doc/" class="home-link router-link-active"><!----> <span class="site-name">CMPAK 账管文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/acct-doc/zh/" class="nav-link router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/acct-doc/zh/deploy/" class="nav-link">
+  发布
+</a></div><div class="nav-item"><a href="/acct-doc/zh/environment/" class="nav-link">
+  环境
+</a></div><div class="nav-item"><a href="/acct-doc/zh/db/" class="nav-link router-link-active">
+  数据脚本
+</a></div><div class="nav-item"><a href="/acct-doc/zh/cache/" class="nav-link">
+  缓存
+</a></div><div class="nav-item"><a href="/acct-doc/zh/param/" class="nav-link">
+  参数
+</a></div><div class="nav-item"><a href="/acct-doc/zh/assetcenter/" class="nav-link">
+  资产中心
+</a></div><div class="nav-item"><a href="http://172.25.132.86:9000/cmpk-api/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSF 服务
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/acct-doc/zh/db/DataBaseLifeCycle.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/acct-doc/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="http://8.208.26.203:18082/cmpak/acctmanm" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Source
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/acct-doc/zh/" class="nav-link router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/acct-doc/zh/deploy/" class="nav-link">
+  发布
+</a></div><div class="nav-item"><a href="/acct-doc/zh/environment/" class="nav-link">
+  环境
+</a></div><div class="nav-item"><a href="/acct-doc/zh/db/" class="nav-link router-link-active">
+  数据脚本
+</a></div><div class="nav-item"><a href="/acct-doc/zh/cache/" class="nav-link">
+  缓存
+</a></div><div class="nav-item"><a href="/acct-doc/zh/param/" class="nav-link">
+  参数
+</a></div><div class="nav-item"><a href="/acct-doc/zh/assetcenter/" class="nav-link">
+  资产中心
+</a></div><div class="nav-item"><a href="http://172.25.132.86:9000/cmpk-api/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSF 服务
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/acct-doc/zh/db/DataBaseLifeCycle.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/acct-doc/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="http://8.208.26.203:18082/cmpak/acctmanm" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Source
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>数据库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/acct-doc/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/acct-doc/zh/db/config.html" class="sidebar-link">参数配置</a></li><li><a href="/acct-doc/zh/db/DataBaseLifeCycle.html" aria-current="page" class="active sidebar-link">数据生命周期管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_1-概述" class="sidebar-link">1. 概述</a></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_2-清理规则" class="sidebar-link">2. 清理规则</a></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_3-系统实现" class="sidebar-link">3. 系统实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_3-1-模型设计" class="sidebar-link">3.1 模型设计</a></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_3-2-代码路径" class="sidebar-link">3.2 代码路径</a></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_3-3-配置文件说明" class="sidebar-link">3.3 配置文件说明</a></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_3-4-应用部署" class="sidebar-link">3.4 应用部署</a></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_3-5-生命周期启动及停止操作说明" class="sidebar-link">3.5 生命周期启动及停止操作说明</a></li></ul></li><li class="sidebar-sub-header"><a href="/acct-doc/zh/db/DataBaseLifeCycle.html#_4-注意事项" class="sidebar-link">4. 注意事项</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据生命周期管理"><a href="#数据生命周期管理" class="header-anchor">#</a> 数据生命周期管理</h1> <h2 id="_1-概述"><a href="#_1-概述" class="header-anchor">#</a> 1. 概述</h2> <p>系统中许多表存放的数据有一定的周期，在到达生命周期后需要做对其做相应的清理工作，现在的清理模式有：</p> <ol><li><p>数据到达一年周期后搬迁至年表存放（各种日志表）</p></li> <li><p>数据到达一年周期直接清理（工单历史表）</p></li> <li><p>数据到达一个月周期后直接清理（工单异常日志表）</p></li> <li><p>工单表数据三天前的要搬迁到当天的分区（工单表）</p></li></ol> <p>针对这些数据清理的要求，对应实现了数据清理的应用，通过定时任务按照每天、每月的周期对这些表的数据进行清理。</p> <h2 id="_2-清理规则"><a href="#_2-清理规则" class="header-anchor">#</a> 2. 清理规则</h2> <p>针对清理要求，现支持的清理规则分为5种，</p> <ol><li><p>采用交换分区的方式，每月末将一年前的月分区数据交换至年表中</p></li> <li><p>无需年表保存的数据，每月末将一年前的月分区truncate即可</p></li> <li><p>工单错误记录表按照日分区，无需保存历史数据，只需每天将一个月前的日分区truncate即可</p></li> <li><p>工单表按照日分区，工单只会执行近三天的分区数据，所以每天将三天前的数据搬迁只当日分区后truncate三天前分区</p></li> <li><p>月表在每月末需要将一年前的月表truncate，待下个月继续使用；</p></li></ol> <h2 id="_3-系统实现"><a href="#_3-系统实现" class="header-anchor">#</a> 3. 系统实现</h2> <h3 id="_3-1-模型设计"><a href="#_3-1-模型设计" class="header-anchor">#</a> 3.1 模型设计</h3> <blockquote><p><strong>清理规则参数表</strong>BS_DCL，建立在账管参数库上</p></blockquote> <table><thead><tr><th>DCL_ID</th> <th>数据清理任务标识</th></tr></thead> <tbody><tr><td>DCL_NAME</td> <td>数据清理任务描述</td></tr> <tr><td>SRC_TABLE_NAME</td> <td>数据源表</td></tr> <tr><td>TEMP_TABLE_NAME</td> <td>交换分区中间表</td></tr> <tr><td>DES_TABLE_NAME</td> <td>数据目的表（用于交换分区和数据搬迁）</td></tr> <tr><td>REMOVE_CYCLE</td> <td>清理周期，-1表示向前推1天/月，1表示向后推1天/月</td></tr> <tr><td>REMOVE_METHOD</td> <td>清理方法（exchg-part：交换分区；trunc-mon-tab：清空月表；trunc-mon-part：清空月分区；trunc-day-part：清空日分区；move-to-his：在线表搬迁到历史表）</td></tr> <tr><td>REMOVE_COND</td> <td>搬迁条件，仅使用在move-to-his方式时作为搬迁到历史表的条件</td></tr> <tr><td>DCL_DATE</td> <td>清理周期（日）：0则每天都执行，1-31表示每月的某天执行</td></tr> <tr><td>DCL_HOUR</td> <td>清理时刻（小时）</td></tr> <tr><td>DCL_MINUTE</td> <td>清理时刻（分钟）</td></tr> <tr><td>STATE</td> <td>状态（U：有效；N：无效）</td></tr> <tr><td>CONN_NAMES</td> <td>连接名称，在那些链接下可用</td></tr></tbody></table> <blockquote><p><strong>清理日志表</strong>BS_DCL_LOG，建立在账管地州库和中心库上</p></blockquote> <table><thead><tr><th>DCL_ID</th> <th>清理任务标识</th></tr></thead> <tbody><tr><td>DCL_NAME</td> <td>清理任务描述</td></tr> <tr><td>START_TIME</td> <td>清理任务开始时间</td></tr> <tr><td>END_TIME</td> <td>清理任务结束时间</td></tr> <tr><td>DURATION</td> <td>清理时长（秒）</td></tr> <tr><td>RESULT_CODE</td> <td>结果标志（F：成功；E：失败）</td></tr> <tr><td>ERR_INFO</td> <td>异常信息</td></tr></tbody></table> <h3 id="_3-2-代码路径"><a href="#_3-2-代码路径" class="header-anchor">#</a> 3.2 代码路径</h3> <p>清理程序：/home/aifet/asset/dcl/lib/acctcomp-dcl-5.0-SNAPSHOT.jar</p> <p>配置文件： /home/aifet/asset/dcl/config</p> <h3 id="_3-3-配置文件说明"><a href="#_3-3-配置文件说明" class="header-anchor">#</a> 3.3 配置文件说明</h3> <p>defaults.xml：数据库连接的配置</p> <p><strong>acctconfig.properties：清理规则的配置，具体配置内容如下：</strong></p> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token comment"># 数据库连接管理器，不允许修改</span>
+
+<span class="token attr-name">db.conn.operator</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.db.impl.DataSourceConnOperator</span>
+
+<span class="token comment"># 时间管理器，不允许修改</span>
+
+<span class="token attr-name">time.handler</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.util.time.LocalTimeHandler</span>
+
+<span class="token comment"># 清理参数配置表bs_dcl所在的数据源</span>
+
+<span class="token attr-name">dcl.param.connname</span><span class="token punctuation">=</span><span class="token attr-value">ACTPARAM</span>
+
+<span class="token comment"># 参数配置刷新周期，以秒为单位</span>
+
+<span class="token attr-name">dcl.param.refresh.sec</span><span class="token punctuation">=</span><span class="token attr-value">1200</span>
+
+<span class="token comment"># 每种清理规则对应的实现类</span>
+
+<span class="token attr-name">dcl.method.exchg-part</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.dcl.oper.ExchangePartition</span>
+
+<span class="token attr-name">dcl.method.trunc-mon-tab</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.dcl.oper.TruncMonthTable</span>
+
+<span class="token attr-name">dcl.method.trunc-mon-part</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.dcl.oper.TruncMonthPartition</span>
+
+<span class="token attr-name">dcl.method.trunc-day-part</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.dcl.oper.TruncDatePartition</span>
+
+<span class="token attr-name">dcl.method.trunc-order-day</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.dcl.oper.TruncOrderDatePart</span>
+
+<span class="token attr-name">dcl.method.move-to-his</span><span class="token punctuation">=</span><span class="token attr-value">com.ai.acctcomp.dcl.oper.MoveToHisOper</span>
+</code></pre></div><h3 id="_3-4-应用部署"><a href="#_3-4-应用部署" class="header-anchor">#</a> 3.4 应用部署</h3> <table><thead><tr><th>主机IP</th> <th>用户名/密码</th> <th>程序目录</th> <th>启动脚本</th> <th>停止脚本</th></tr></thead> <tbody><tr><td>172.25.136.16</td> <td>aifet/1q1w1e1r</td> <td>/home/aifet/asset/dcl</td> <td>./bin/startAll.sh</td> <td>./sbin/kill-app.sh dcl</td></tr></tbody></table> <h3 id="_3-5-生命周期启动及停止操作说明"><a href="#_3-5-生命周期启动及停止操作说明" class="header-anchor">#</a> 3.5 生命周期启动及停止操作说明</h3> <ol><li><p>登录172.25.136.16主机，aifet用户 密码：1q1w1e1r</p></li> <li><p>切到/home/aifet/asset/dcl目录下</p></li></ol> <p><img src="/acct-doc/assets/img/DatabaseLifeCycle.173e462c.png" alt="生命周期截图"></p> <blockquote><p>Bin目录存放启动脚</p> <p>Config目录存在配置文件目录</p> <p>Lib目录存放dcl程序及需要的jar包</p> <p>Sbin 目录存放停止脚本</p> <p>Logs目录存放每个中心启动时产生的日志记录</p></blockquote> <ol start="3"><li>进入bin目录</li></ol> <blockquote><p>./startAll.sh 启动脚本</p></blockquote> <ol start="4"><li>进入logs目录</li></ol> <blockquote><p>tail -1000f dcl_appAC1-1227.log 查看目录</p></blockquote> <ol start="5"><li>如果需要停止进程</li></ol> <blockquote><p>进入sbin目录</p> <p>./kill-app dcl 命令</p></blockquote> <h2 id="_4-注意事项"><a href="#_4-注意事项" class="header-anchor">#</a> 4. 注意事项</h2> <ol><li><p>生命周期是定时任务。一次启动就不用再起。</p></li> <li><p>BS_DCL表中配置的任务，每月/每日按照配置中的日期定时执行清理任务</p></li> <li><p>新增表清理任务，需要在BS_DCL中新增任务配置，不需要刷缓存。并且需要重新启停生命周期管理进程。</p></li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="http://8.208.26.203:18082/cmpak/acctmanm/edit/develop/doc/zh/db/DataBaseLifeCycle.md" target="_blank" rel="noopener noreferrer">在 Gogs 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/acct-doc/zh/db/config.html" class="prev">
+        参数配置
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/acct-doc/assets/js/app.63ad57cc.js" defer></script><script src="/acct-doc/assets/js/2.33beb707.js" defer></script><script src="/acct-doc/assets/js/12.aeeb4d1b.js" defer></script>
+  </body>
+</html>

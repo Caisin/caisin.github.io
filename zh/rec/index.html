@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>对账 | CMPAK 账管文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="CMPAK 账管交维文档">
+    
+    <link rel="preload" href="/acct-doc/assets/css/0.styles.51d143cd.css" as="style"><link rel="preload" href="/acct-doc/assets/js/app.63ad57cc.js" as="script"><link rel="preload" href="/acct-doc/assets/js/2.33beb707.js" as="script"><link rel="preload" href="/acct-doc/assets/js/37.a8d4eb5f.js" as="script"><link rel="prefetch" href="/acct-doc/assets/js/10.3a0026ee.js"><link rel="prefetch" href="/acct-doc/assets/js/11.37b0e332.js"><link rel="prefetch" href="/acct-doc/assets/js/12.aeeb4d1b.js"><link rel="prefetch" href="/acct-doc/assets/js/13.ac323191.js"><link rel="prefetch" href="/acct-doc/assets/js/14.bd2cb70d.js"><link rel="prefetch" href="/acct-doc/assets/js/15.e224db95.js"><link rel="prefetch" href="/acct-doc/assets/js/16.1706826f.js"><link rel="prefetch" href="/acct-doc/assets/js/17.d60e9805.js"><link rel="prefetch" href="/acct-doc/assets/js/18.b7a13350.js"><link rel="prefetch" href="/acct-doc/assets/js/19.cf8e7b1d.js"><link rel="prefetch" href="/acct-doc/assets/js/20.105e9797.js"><link rel="prefetch" href="/acct-doc/assets/js/21.b3600cfd.js"><link rel="prefetch" href="/acct-doc/assets/js/22.fc9c31d9.js"><link rel="prefetch" href="/acct-doc/assets/js/23.63486421.js"><link rel="prefetch" href="/acct-doc/assets/js/24.206d6f32.js"><link rel="prefetch" href="/acct-doc/assets/js/25.fcfed3db.js"><link rel="prefetch" href="/acct-doc/assets/js/26.9c2a70ba.js"><link rel="prefetch" href="/acct-doc/assets/js/27.a56776c7.js"><link rel="prefetch" href="/acct-doc/assets/js/28.f3ad07db.js"><link rel="prefetch" href="/acct-doc/assets/js/29.b5b0f0f5.js"><link rel="prefetch" href="/acct-doc/assets/js/3.e252b8df.js"><link rel="prefetch" href="/acct-doc/assets/js/30.3b82be60.js"><link rel="prefetch" href="/acct-doc/assets/js/31.7cfde945.js"><link rel="prefetch" href="/acct-doc/assets/js/32.b0420cfa.js"><link rel="prefetch" href="/acct-doc/assets/js/33.9208bbca.js"><link rel="prefetch" href="/acct-doc/assets/js/34.1ef2f7cc.js"><link rel="prefetch" href="/acct-doc/assets/js/35.f00cf5a4.js"><link rel="prefetch" href="/acct-doc/assets/js/36.c8d22bd6.js"><link rel="prefetch" href="/acct-doc/assets/js/4.6f4dd1f9.js"><link rel="prefetch" href="/acct-doc/assets/js/5.1dee15cb.js"><link rel="prefetch" href="/acct-doc/assets/js/6.6d4ac80a.js"><link rel="prefetch" href="/acct-doc/assets/js/7.e14e4b70.js"><link rel="prefetch" href="/acct-doc/assets/js/8.36259b9a.js"><link rel="prefetch" href="/acct-doc/assets/js/9.bbaf23c7.js">
+    <link rel="stylesheet" href="/acct-doc/assets/css/0.styles.51d143cd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/acct-doc/" class="home-link router-link-active"><!----> <span class="site-name">CMPAK 账管文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/acct-doc/zh/" class="nav-link router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/acct-doc/zh/deploy/" class="nav-link">
+  发布
+</a></div><div class="nav-item"><a href="/acct-doc/zh/environment/" class="nav-link">
+  环境
+</a></div><div class="nav-item"><a href="/acct-doc/zh/db/" class="nav-link">
+  数据脚本
+</a></div><div class="nav-item"><a href="/acct-doc/zh/cache/" class="nav-link">
+  缓存
+</a></div><div class="nav-item"><a href="/acct-doc/zh/param/" class="nav-link">
+  参数
+</a></div><div class="nav-item"><a href="/acct-doc/zh/assetcenter/" class="nav-link">
+  资产中心
+</a></div><div class="nav-item"><a href="http://172.25.132.86:9000/cmpk-api/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSF 服务
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/acct-doc/zh/rec/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/acct-doc/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="http://8.208.26.203:18082/cmpak/acctmanm" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Source
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/acct-doc/zh/" class="nav-link router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/acct-doc/zh/deploy/" class="nav-link">
+  发布
+</a></div><div class="nav-item"><a href="/acct-doc/zh/environment/" class="nav-link">
+  环境
+</a></div><div class="nav-item"><a href="/acct-doc/zh/db/" class="nav-link">
+  数据脚本
+</a></div><div class="nav-item"><a href="/acct-doc/zh/cache/" class="nav-link">
+  缓存
+</a></div><div class="nav-item"><a href="/acct-doc/zh/param/" class="nav-link">
+  参数
+</a></div><div class="nav-item"><a href="/acct-doc/zh/assetcenter/" class="nav-link">
+  资产中心
+</a></div><div class="nav-item"><a href="http://172.25.132.86:9000/cmpk-api/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSF 服务
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/acct-doc/zh/rec/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/acct-doc/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="http://8.208.26.203:18082/cmpak/acctmanm" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Source
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="对账"><a href="#对账" class="header-anchor">#</a> 对账</h1> <h2 id="_1-序列"><a href="#_1-序列" class="header-anchor">#</a> 1. 序列</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">--序列</span>
+<span class="token keyword">drop</span> sequence CEN<span class="token punctuation">.</span>SEQ_MOM_SO_NBR<span class="token punctuation">;</span>
+<span class="token keyword">create</span> sequence CEN<span class="token punctuation">.</span>SEQ_MOM_SO_NBR
+minvalue <span class="token number">1</span>
+maxvalue <span class="token number">9999999999</span>
+increment <span class="token keyword">by</span> <span class="token number">1</span>
+cache <span class="token number">2000</span>
+<span class="token keyword">cycle</span>
+<span class="token punctuation">;</span>
+</code></pre></div><h2 id="_2-表"><a href="#_2-表" class="header-anchor">#</a> 2. 表</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">drop</span> sequence CEN<span class="token punctuation">.</span>SEQ_MOM_SO_NBR<span class="token punctuation">;</span>
+<span class="token keyword">create</span> sequence CEN<span class="token punctuation">.</span>SEQ_MOM_SO_NBR
+    minvalue <span class="token number">1</span>
+    maxvalue <span class="token number">9999999999</span>
+    increment <span class="token keyword">by</span> <span class="token number">1</span>
+    cache <span class="token number">2000</span>
+    <span class="token keyword">cycle</span>
+<span class="token punctuation">;</span>
+<span class="token keyword">drop</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_FILE_DETAIL<span class="token punctuation">;</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_FILE_DETAIL
+<span class="token punctuation">(</span>
+    SO_NBR                varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    BANK_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    SETTLE_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    MERCHANT_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TERMINAL_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    MERCHANT_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    DBA_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ADDRESS varchar2<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CITY varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TRANSACTION_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TRNX_TYPE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CARD_NUMBER varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CARD_TYPE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CARD_CATEGORY varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    APPROVAL_CODE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ZONG_PORTAL_ORDER_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TRANSACTION_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TOTAL_DISCOUNT_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    FED_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TOTAL_DISCOUNT_EXCLUSIVE_FED varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    NET_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+    PCTFREE <span class="token number">10</span>
+    INITRANS <span class="token number">20</span>
+    MAXTRANS <span class="token number">255</span>
+    <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_DAT_01
+<span class="token punctuation">;</span>
+
+
+<span class="token keyword">alter</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_FILE_DETAIL
+    <span class="token keyword">add</span> <span class="token keyword">constraint</span> PK_MOM_BANK_FILE_DETAIL <span class="token keyword">primary</span> <span class="token keyword">key</span> <span class="token punctuation">(</span>SO_NBR<span class="token punctuation">)</span>
+        <span class="token keyword">using</span> <span class="token keyword">index</span>
+            PCTFREE <span class="token number">10</span>
+            INITRANS <span class="token number">20</span>
+            MAXTRANS <span class="token number">255</span>
+            <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_IND_01
+            NoLogging<span class="token punctuation">;</span>
+<span class="token comment">--历史表</span>
+
+<span class="token keyword">drop</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_FILE_DETAIL_HIS<span class="token punctuation">;</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_FILE_DETAIL_HIS
+<span class="token punctuation">(</span>
+    SO_NBR                varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    BANK_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    SETTLE_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    MERCHANT_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TERMINAL_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    MERCHANT_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    DBA_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ADDRESS varchar2<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CITY varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TRANSACTION_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TRNX_TYPE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CARD_NUMBER varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CARD_TYPE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    CARD_CATEGORY varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    APPROVAL_CODE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ZONG_PORTAL_ORDER_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TRANSACTION_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TOTAL_DISCOUNT_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    FED_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    TOTAL_DISCOUNT_EXCLUSIVE_FED varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    NET_AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+    PCTFREE <span class="token number">10</span>
+    INITRANS <span class="token number">20</span>
+    MAXTRANS <span class="token number">255</span>
+    <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_DAT_01
+<span class="token punctuation">;</span>
+
+
+<span class="token keyword">alter</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_FILE_DETAIL_HIS
+    <span class="token keyword">add</span> <span class="token keyword">constraint</span> PK_MOM_BANK_FILE_DETAIL_HIS <span class="token keyword">primary</span> <span class="token keyword">key</span> <span class="token punctuation">(</span>SO_NBR<span class="token punctuation">)</span>
+        <span class="token keyword">using</span> <span class="token keyword">index</span>
+            PCTFREE <span class="token number">10</span>
+            INITRANS <span class="token number">20</span>
+            MAXTRANS <span class="token number">255</span>
+            <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_IND_01
+            NoLogging<span class="token punctuation">;</span>
+<span class="token comment">--差异数据表</span>
+
+
+<span class="token comment">--文件入库表</span>
+<span class="token keyword">drop</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_REC_MISS<span class="token punctuation">;</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_REC_MISS
+<span class="token punctuation">(</span>
+    SO_NBR varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    SETTLE_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    BANK_NAME varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    REC_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    APPROVAL_CODE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    AMOUNT varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    PORTAL_ORDER_ID varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    PAY_DATE varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ACCESS_NO varchar2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token comment">-- 1 missing at boss,2 missing at bank</span>
+    REC_TYPE number<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+    PCTFREE <span class="token number">10</span>
+    INITRANS <span class="token number">20</span>
+    MAXTRANS <span class="token number">255</span>
+    <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_DAT_01
+<span class="token punctuation">;</span>
+
+
+<span class="token keyword">alter</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>MOM_BANK_REC_MISS
+    <span class="token keyword">add</span> <span class="token keyword">constraint</span> PK_MOM_BANK_REC_MISS <span class="token keyword">primary</span> <span class="token keyword">key</span> <span class="token punctuation">(</span>SO_NBR<span class="token punctuation">)</span>
+        <span class="token keyword">using</span> <span class="token keyword">index</span>
+            PCTFREE <span class="token number">10</span>
+            INITRANS <span class="token number">20</span>
+            MAXTRANS <span class="token number">255</span>
+            <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_IND_01
+            NoLogging<span class="token punctuation">;</span>
+<span class="token comment">--中间表</span>
+<span class="token keyword">drop</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>AM_RECHARGE_BUSI_REC_ONLINE_IN<span class="token punctuation">;</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>AM_RECHARGE_BUSI_REC_ONLINE_IN
+<span class="token punctuation">(</span>
+    acct_id            NUMBER<span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    phone_id           VARCHAR2<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    cmos_id            VARCHAR2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    boss_id            VARCHAR2<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    recharge_date      <span class="token keyword">DATE</span><span class="token punctuation">,</span>
+    partition_id       NUMBER<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">default</span> to_number<span class="token punctuation">(</span>to_char<span class="token punctuation">(</span>sysdate<span class="token punctuation">,</span><span class="token string">'mm'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>
+    amount             NUMBER<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    remarks            VARCHAR2<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ext1               VARCHAR2<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ext2               VARCHAR2<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ext3               VARCHAR2<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    cmos_recharge_date <span class="token keyword">DATE</span>
+<span class="token punctuation">)</span>
+    PCTFREE <span class="token number">10</span>
+    INITRANS <span class="token number">20</span>
+    MAXTRANS <span class="token number">255</span>
+    <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_DAT_01
+    <span class="token keyword">PARTITION</span> <span class="token keyword">by</span> RANGE <span class="token punctuation">(</span>PARTITION_ID<span class="token punctuation">)</span>
+<span class="token punctuation">(</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M1  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M2  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M3  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M4  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M5  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M6  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M7  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M8  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M9  <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M10 <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M11 <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">PARTITION</span> PAR_AM_RECHARGE_BUSI_REC_ONLINE_IN_M12 <span class="token keyword">VALUES</span> LESS THAN <span class="token punctuation">(</span>MAXVALUE<span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+<span class="token punctuation">;</span>
+
+<span class="token comment">-- Create/Recreate primary, unique and foreign key constraints</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> CEN<span class="token punctuation">.</span>AM_RECHARGE_BUSI_REC_ONLINE_IN
+    <span class="token keyword">add</span> <span class="token keyword">constraint</span> PK_AM_RECHARGE_BUSI_REC_ONLINE_IN <span class="token keyword">primary</span> <span class="token keyword">key</span> <span class="token punctuation">(</span>CMOS_ID<span class="token punctuation">,</span>PHONE_ID<span class="token punctuation">,</span>PARTITION_ID<span class="token punctuation">)</span>
+        <span class="token keyword">using</span> <span class="token keyword">index</span>
+            PCTFREE <span class="token number">10</span>
+            INITRANS <span class="token number">20</span>
+            MAXTRANS <span class="token number">255</span>
+            <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_IND_01
+            NoLogging<span class="token punctuation">;</span>
+
+<span class="token keyword">create</span> <span class="token keyword">unique</span> <span class="token keyword">index</span> CEN<span class="token punctuation">.</span>IDX_AM_RECHARGE_BUSI_REC_ONLINE_IN_CEC <span class="token keyword">on</span> CEN<span class="token punctuation">.</span>AM_RECHARGE_BUSI_REC_ONLINE_IN <span class="token punctuation">(</span>CMOS_RECHARGE_DATE<span class="token punctuation">,</span>EXT3<span class="token punctuation">,</span>CMOS_ID<span class="token punctuation">,</span>PARTITION_ID<span class="token punctuation">)</span>
+    PCTFREE <span class="token number">10</span>
+    INITRANS <span class="token number">20</span>
+    MAXTRANS <span class="token number">255</span>
+    <span class="token keyword">TABLESPACE</span> TBS_CEN_LNG_IND_01
+    NoLogging<span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="_3-查询银行配置"><a href="#_3-查询银行配置" class="header-anchor">#</a> 3. 查询银行配置</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">--1. ftp 配置</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> base<span class="token punctuation">.</span>WD_GATEWAY_FTP <span class="token keyword">where</span> SITE_ID <span class="token operator">like</span> <span class="token string">'mom_rec_%'</span><span class="token punctuation">;</span>
+<span class="token comment">--siteId=PARA1 filename=PARA2 localPath=PARA3 reconPath=PARA4</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> param<span class="token punctuation">.</span>BS_PARA_DETAIL <span class="token keyword">where</span> PARA_TYPE<span class="token operator">=</span><span class="token string">'MOM_REC_BANKS'</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_4-生成差异数据"><a href="#_4-生成差异数据" class="header-anchor">#</a> 4. 生成差异数据</h2> <h2 id="_2-从ftp下载excel文件"><a href="#_2-从ftp下载excel文件" class="header-anchor">#</a> 2. 从ftp下载excel文件</h2> <h2 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">--任务配置</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PARAM<span class="token punctuation">.</span>BS_TASK <span class="token punctuation">(</span>TASK_CODE<span class="token punctuation">,</span> TASK_NAME<span class="token punctuation">,</span> TASK_GRP_CODE<span class="token punctuation">,</span> TASK_GRP_NAME<span class="token punctuation">,</span> CHANNEL_NUMBER<span class="token punctuation">,</span> CHANNEL_FIELD<span class="token punctuation">,</span> TASK_GRP_ORDER<span class="token punctuation">,</span> TASK_ORDER<span class="token punctuation">,</span> WRITE_MODE<span class="token punctuation">,</span> FILE_RECORD<span class="token punctuation">,</span> USE_FLAG<span class="token punctuation">,</span> CENTER_TYPE<span class="token punctuation">,</span> REGION_ID<span class="token punctuation">,</span> OP_ID<span class="token punctuation">,</span> ORG_ID<span class="token punctuation">,</span> CLASS_NAME<span class="token punctuation">,</span> COUNTY_CODE<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'MomRecTask'</span><span class="token punctuation">,</span> <span class="token string">'MomRecTask'</span><span class="token punctuation">,</span> <span class="token string">'AC'</span><span class="token punctuation">,</span> <span class="token string">'帐管'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token string">'group'</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token string">'U'</span><span class="token punctuation">,</span> <span class="token string">'AC'</span><span class="token punctuation">,</span> <span class="token string">'0000'</span><span class="token punctuation">,</span> <span class="token string">'0000'</span><span class="token punctuation">,</span> <span class="token string">'0000'</span><span class="token punctuation">,</span> <span class="token string">'com.ai.ac.core.rec.MomRecTask'</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PARAM<span class="token punctuation">.</span>BS_TASK_CHANNEL <span class="token punctuation">(</span>TASK_CODE<span class="token punctuation">,</span> CHANNEL_NO<span class="token punctuation">,</span> START_ID<span class="token punctuation">,</span> END_ID<span class="token punctuation">,</span> BATCH_NUMBER<span class="token punctuation">,</span> INPUT_PATH<span class="token punctuation">,</span> OUTPUT_PATH<span class="token punctuation">,</span> CENTER_TYPE<span class="token punctuation">,</span> REGION_IDS<span class="token punctuation">,</span> CENTER<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'MomRecTask'</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token string">'AC'</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token string">'8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">--银行参数</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> PARAM<span class="token punctuation">.</span>BS_PARA_DETAIL <span class="token keyword">where</span> PARA_TYPE<span class="token operator">=</span><span class="token string">'MOM_REC_BANKS'</span> <span class="token operator">and</span> PARA_CODE<span class="token operator">=</span><span class="token string">'albk'</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PARAM<span class="token punctuation">.</span>BS_PARA_DETAIL <span class="token punctuation">(</span>PARA_ID<span class="token punctuation">,</span> REGION_ID<span class="token punctuation">,</span> PARA_TYPE<span class="token punctuation">,</span> PARA_CODE<span class="token punctuation">,</span> PARA_NAME<span class="token punctuation">,</span> PARA1<span class="token punctuation">,</span> PARA2<span class="token punctuation">,</span> PARA3<span class="token punctuation">,</span> PARA4<span class="token punctuation">,</span> PARA5<span class="token punctuation">,</span> PARA_DESC<span class="token punctuation">,</span> STATE<span class="token punctuation">,</span> OP_ID<span class="token punctuation">,</span> STATE_DATE<span class="token punctuation">,</span> REMARKS<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'ZZZZ'</span><span class="token punctuation">,</span> <span class="token string">'MOM_REC_BANKS'</span><span class="token punctuation">,</span> <span class="token string">'albk'</span><span class="token punctuation">,</span> <span class="token string">'mom对账'</span><span class="token punctuation">,</span> <span class="token string">'acctmanm'</span><span class="token punctuation">,</span> <span class="token string">'albk_'</span><span class="token punctuation">,</span> <span class="token string">'bank/src/'</span><span class="token punctuation">,</span> <span class="token string">'/app/data/data/asset-rec/bank/'</span><span class="token punctuation">,</span> <span class="token string">'bank/rec/'</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> <span class="token boolean">null</span><span class="token punctuation">,</span> TO_DATE<span class="token punctuation">(</span><span class="token string">'2020-01-15 13:53:11'</span><span class="token punctuation">,</span> <span class="token string">'YYYY-MM-DD HH24:MI:SS'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'siteId=PARA1 filename=PARA2 ftpPath=PARA3 localPath=PARA4 reconPath=PARA5'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">--邮件参数</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> param<span class="token punctuation">.</span>BS_SYS_PROFILES <span class="token keyword">where</span> PROFILE_TYPE<span class="token operator">=</span><span class="token string">'MOM_REC'</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PARAM<span class="token punctuation">.</span>BS_SYS_PROFILES <span class="token punctuation">(</span>PROFILE_TYPE<span class="token punctuation">,</span> PROFILE_CODE<span class="token punctuation">,</span> PROFILE_VALUE<span class="token punctuation">,</span> REGION_ID<span class="token punctuation">,</span> REMARK<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'MOM_REC'</span><span class="token punctuation">,</span> <span class="token string">'MOM_REC_EMAIL_CONTENT'</span><span class="token punctuation">,</span> <span class="token string">'Dear all&lt;/br&gt;&lt;/br&gt;Daily reconciliation data.'</span><span class="token punctuation">,</span> <span class="token string">'ZZZZ'</span><span class="token punctuation">,</span> <span class="token string">'mom对帐发送邮件内容'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PARAM<span class="token punctuation">.</span>BS_SYS_PROFILES <span class="token punctuation">(</span>PROFILE_TYPE<span class="token punctuation">,</span> PROFILE_CODE<span class="token punctuation">,</span> PROFILE_VALUE<span class="token punctuation">,</span> REGION_ID<span class="token punctuation">,</span> REMARK<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'MOM_REC'</span><span class="token punctuation">,</span> <span class="token string">'MOM_REC_EMAIL_RECEIVER'</span><span class="token punctuation">,</span> <span class="token string">'hekx@asiainfo.com;'</span><span class="token punctuation">,</span> <span class="token string">'ZZZZ'</span><span class="token punctuation">,</span> <span class="token string">'mom对帐发送邮件接收人,分号隔开'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PARAM<span class="token punctuation">.</span>BS_SYS_PROFILES <span class="token punctuation">(</span>PROFILE_TYPE<span class="token punctuation">,</span> PROFILE_CODE<span class="token punctuation">,</span> PROFILE_VALUE<span class="token punctuation">,</span> REGION_ID<span class="token punctuation">,</span> REMARK<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'MOM_REC'</span><span class="token punctuation">,</span> <span class="token string">'MOM_REC_FTP_PATH'</span><span class="token punctuation">,</span> <span class="token string">'172.25.136.69'</span><span class="token punctuation">,</span> <span class="token string">'ZZZZ'</span><span class="token punctuation">,</span> <span class="token string">'mom对帐邮件附件ftp的IP地址'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">--能开发送email表</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> oppf<span class="token punctuation">.</span>Email_Param_Conf<span class="token punctuation">;</span>
+<span class="token comment">--能开发送email历史表</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> oppf<span class="token punctuation">.</span>Email_Param_Conf_h<span class="token punctuation">;</span>
+
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="http://8.208.26.203:18082/cmpak/acctmanm/edit/develop/doc/zh/rec/README.md" target="_blank" rel="noopener noreferrer">在 Gogs 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/acct-doc/assets/js/app.63ad57cc.js" defer></script><script src="/acct-doc/assets/js/2.33beb707.js" defer></script><script src="/acct-doc/assets/js/37.a8d4eb5f.js" defer></script>
+  </body>
+</html>
